@@ -428,14 +428,6 @@ input {
   text-align: center;
   margin: 0.5em 0; /* Add spacing between elements */
 }
-
-/* Specific adjustment for the label within the Soins BIO section for screens smaller than 480px wide */
-@media (max-width: 479px) {
-  #tarifs-ongles-mel label[for="soins"] {
-    font-size: 12px; /* Adjust font size specifically for screens smaller than 480px */
-
-  }
-}
 /* Styles for larger screens (min-width: 768px) */
 @media (min-width: 768px) {
   /* Common styles for larger screens */
