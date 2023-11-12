@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link href="style.css" rel="stylesheet">
+    <title>Paral'ailes</title>
+</head>
+
+<body>
+    <!-------------- Header -------------->
+    <header>
+<script>
+            // Define the scrollToSection function
+            function scrollToSection(sectionId, offset = 0) {
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    const yOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({ top: yOffset - offset, behavior: 'smooth' });
+                }
+        
+                // Close the hamburger menu (checkbox) after a link is clicked
+                document.querySelector('#checkboxhamburger').checked = false;
+            }
+        
+            // Add an event listener to close the menu when a link is clicked
+            document.querySelectorAll('.menu-links a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.querySelector('#checkboxhamburger').checked = false;
+                });
+            });
+        </script>
+        
+        <nav data-aos="fade-down" data-aos-duration="1000">
+            
+            <!-- Hamurger -->
+            <input type="checkbox" class="checkbox" id="checkboxhamburger" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <!-- Menu principal -->
+            <div class="menu-links">
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('accueil' )">Accueil</a></li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('tarifs-ongles', 40)">Tarifs</a></li>               
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('map', 40)">Où nous trouver</a> </li>
+                    <li><a href="javascript:void(0);" onclick="scrollToSection('contact', 40)">Contact</a></li>                              
+                </ul>
+            </div> 
+
+            <!-- Bouton Contact -->
+            <div class="menu-contact">
+                <ul>
+                    <li>
+                        <a href="#contact" title="Me contacter pour plus d'informations">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <!-------------- Section Accueil -------------->
+     <section id="accueil" >
+        <div class="wrapper">
+            <div class="box-grid" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container-picture">                 
+                </div>
+                <div class="container-content">
+                    <div class="content-title">
+                        <h2>Paral'Ailes</h2>
+                        <h2>Salon de coiffure</h2>
+                    </div>
+                    <div class="content">
+                        <p>
+                         Avez-vous envie d'un moment de détente unique ? Dans un salon privatisé rien que pour vous ? Dans un décor atypique ? Un mélange industriel et angélique ? alors n'hésitez pas, je suis la personne qui vous faut !
+Exerçant mon métier depuis plus de 12 ans, ayant été formée par de très grands salons Parisiens, ayant été recrutée pour des coiffures d'événements de mannequinat.
+Je suis désormais de retour en Savoie et mon projet voit enfin le jour.
+Je serais ravie de vous accueillir dans mon petit coin de paradis afin de vous embellir et vous satisfaire.
+Et comme dirait Charlie, à bientôt les Anges
+                        </p>
+                        <div class="info">
+                            <div class="social">
+                                <a href="https://www.instagram.com/paral_ailes/?hl=en" title="Accéder au Instagram">
+                                    <img src="images/instalogo.png" alt="Instagram Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-arrow">
+                <a href="#about-me">              
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="separator-bar"></div>
+    
+<!-------------- Section Tarifs Ongles -------------->
+<section id tarifs>
+    <section id="tarifs-ongles">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-title">            
+            </div> 
+        <div class="container-content">
+            <h1>TARIFS Paral'Ailes :</h1>
+        
+            <br/><br/>
+            <div class="checkbox">
+                <input type="checkbox" id="femme">
+                <label for="femme"><h2>Femmes</h2></label>
+                <div class="image-tarifs-femme">
+                    <img src="images/Femmes1.jpeg" alt="">
+                    <img src="images/Femmes2.jpeg" alt="">
+                    <img src="images/Femmes3.jpeg" alt="">
+                    <img src="images/Femmes4.jpeg" alt="">
+                </div>
+            </div>
+            <br/>
+            <div class="checkbox">
+                <input type="checkbox" id="homme">
+                <label for="homme"><h2>Hommes</h2></label>
+                <div class="image-tarifs">
+                    <img src="images/Hommes.jpeg" alt="">
+                </div>
+            </div>
+            <br/>
+            <div class="checkbox">
+                <input type="checkbox" id="enfant">
+                <label for="enfant"><h2>Enfants/Etudiants</h2></label>
+                <div class="image-tarifs">
+                    <img src="images/Enfants.jpeg" alt="">
+                </div>       
+            </div>
+            <br/><br/><br/><br/>
+            <h2>Uniquement sur rendez-vous</h2>
+            <h3>Horaires adaptées en fonction de vos besoins</h3>
+
+        </div>
+    </section>
+
+        <div id="separator-bar"></div>
+
+        <!-------------- Section TARIFS MEL -------------->
+    <section id="tarifs-ongles-mel">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-title">            
+            </div> 
+        <div class="container-content">
+            <h1>TARIFS Mel'Esthetique :</h1>
+            <br/><br/>
+            <div class="checkbox">
+                <input type="checkbox" id="onglerie">
+                <label for="onglerie"><h2>Onglerie</h2></label>
+                <div class="image-tarifs-femme">
+                    <img src="images/1.png" alt="">
+                    <img src="images/2.png" alt="">              
+                </div>
+            </div>
+            <br/>
+            <div class="checkbox">
+                <input type="checkbox" id="soins">
+                <label for="soins"><h2>Soins BIO visage, mains, pieds</h2></label>
+                <div class="image-tarifs">
+                    <img src="images/3.png" alt="">
+                    <img src="images/4.png" alt="">
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="massage">
+                <label for="massage"><h2>Massage</h2></label>
+                <div class="image-tarifs">
+                    <img src="images/5.png" alt="">  
+                </div>
+            </div>
+            
+            <br/>
+            <div class="checkbox">
+                <input type="checkbox" id="epilation">
+                <label for="epilation"><h2>Épilation</h2></label>
+                <div class="image-tarifs">
+                    <img src="images/6.png" alt="">
+                    <img src="images/7.png" alt="">
+                </div>       
+            </div>
+            <br/><br/><br/><br/>
+            <h2>Uniquement sur rendez-vous</h2>
+            <h3>Horaires adaptées en fonction de vos besoins</h3>
+        </div>
+</section>
+
+</section>
+
+<div id="separator-bar"></div>
+
+<!-------------- Section Ou nous trouver ? -------------->
+<div id="separator-bar2"></div>   
+<section id="map">
+    <div class="Contact">
+      <div class="container reveal2"> 
+                <div class="container ">
+                    <h1>Où nous trouver</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11181.476661759201!2d6.01189015265854!3d45.52277619388183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478bae715aa06875%3A0x408ab2ae4bab4f0!2s73800%20Chignin!5e0!3m2!1sen!2sfr!4v1697388617743!5m2!1sen!2sfr"></iframe>
+                    <div class="content1 reveal">
+                    <div class="p1">
+                        <h1>Adresse</h1>                           
+                        <p>73800 Chignin</p>
+                    </div>
+                    <div class="p2">
+                        <h1>Contacts</h1>
+                        <p>06 27 13 12 57</p>
+                        <p>paral.ailescoiffure@gmail.com</p>                                    
+                    </div>                                 
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>    
+
+<!-------------- Section Contact -------------->
+<div id="separator-bar"></div>
+<section id="contact">
+    <div class="wrapper" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container-grid">
+            <div class="container-content">
+                <h1>Contact</h1>
+                <p class="title">
+                    N'hésitez pas à me contacter, je suis à votre disposition pour
+                    plus d'informations.
+                </p>
+                <div class="content">
+                    <div class="mail">
+                        <span class="material-symbols-outlined"> Email </span>
+                        <p>paral.ailescoiffure@gmail.com</p>
+                    </div>
+                    <div class="home">
+                        <span class="material-symbols-outlined"> Paral'Ailes </span>
+                        <p>06 27 13 12 57</p> 
+                    </div>
+                    <div class="home">
+                        <span class="material-symbols-outlined"> Mel'esthetique </span>
+                        <p>07 69 97 26 78</p>
+                    </div>
+                    <div class="tel">
+                        <span class="material-symbols-outlined"> Adresse </span>
+                        <p>73800 Chignin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-form">
+                <form action="mailto:paral.ailescoiffure@gmail.com" method="get">
+
+                    <p class="info-contact">Email *</p>
+                    <input type="text" name="email" placeholder="Votre email" required />
+
+                    <p class="info-contact">Sujet *</p>
+                    <input type="text" name="subject" placeholder="Sujet du message" required />
+
+                    <p class="info-contact">Message *</p>
+                    <textarea type="text" name="body" placeholder="Corps du message" required></textarea>
+
+                    <button type="submit" title="Envoyer votre message">
+                        Envoyer <span class="material-symbols-outlined"></span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>            
+</section>   
+</body>
+</html>
