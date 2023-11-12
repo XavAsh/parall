@@ -873,8 +873,8 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   }
 
   #accueil .container-picture {
-    width: 200px !important;
-    height: 200px !important;
+    width: 300px !important;
+    height: 300px !important;
     background-size: cover !important; /* Centered and cover the container */
     background-position: center center !important; /* Center the background image */
     background-repeat: no-repeat !important; /* Prevent image repetition */
